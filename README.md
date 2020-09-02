@@ -1,0 +1,50 @@
+## Project #0: Implementing Stack with list head
+
+### *** Due on 24:00, September 18 (Friday) ***
+
+
+### Goal
+To warm up C programming, implement the stack with list head. In addition, get familiar with PASubmit, our project assignment management system.  
+
+
+### Problem Specification
+- Operating systems are full of data structures that abstract many system resources. Thus, you must understand fundamental data structures to explore further into operating systems. In this sense, your task is to **implement the stack with the list head.**
+
+- See [Wikipedia](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)) for the explanation about the stack.
+
+- To *materialize* the abstract data type into C code, you need some mechanisms to give an ordered relationship between objects. In this programming assignment, it is enforced to use the `stack` instance and `struct entry` data structure declared in `stack.c`.
+  - You should use them as-is without modifying them.
+  - You should not define your own data structures nor instances. It is prohibited to (but not limited to) define your own array and some indexes pointing to the top and tail of the stack.
+
+- The list head is one of the most handy, powerful data structures widely used in the Linux kernel. At first, it looks very weird, and its implementation (in `list_head.h`) is hard to understand even if you have mastered pointers in C. Once you get used to it, however, it will be your best friend for programming in C.
+- In fact, you don't have to understand how it works, but just try to get used to using it. It sounds crazy, but become Neo (believe me).
+- Here are some (but not limited to) sites that may help you
+  - Introduction: https://kernelnewbies.org/FAQ/LinkedLists
+  - Kernel API manual: https://www.kernel.org/doc/html/v4.15/core-api/kernel-api.html
+  - Advanced explanation: https://medium.com/@414apache/kernel-data-structures-linkedlist-b13e4f8de4bf
+
+- There are three functions in `stack.c` waiting for your work. Complete `push_stack()`, `pop_stack()`, and `dump_stack()`.
+
+- `push_stack()` and `pop_stack()` are straightforward. Push the given value into the stack, or pop the top of the stack.
+
+- `dump_stack()` should dump the contents in `stack`. Print out the value in `stack` from the top to the bottom. The value should be printed out to `stderr` to get properly graded in pasubmit. To traverse the list head, you must use one of the functions with `list_for_` as prefix.
+
+- DO NOT ALLOCATE/DEFINE AN ARRAY TO HOLD `struct entry`. Instead, each entry should be dynamically allocated and freed using `malloc` and `free`.
+
+
+### Logistics
+- Create your account at [https://sslab.ajou.ac.kr/pasubmit](https://sslab.ajou.ac.kr/pasubmit).
+  - You don't need to register again if you have an account already. Send an email to instructor if you forgot your password.
+	- New registration will be automatically processed in 10 seconds. Also send an email to instructor if you cannot see this class from your class list.
+- Start this programming assignment by cloning this repository from https://github.com/sslab-ajou/sce213-pa0-2020f.
+- Submit only `stack.c` for the code. PASubmit will not evaluate your submission if you submit files with different names. You don't need to submit the report nor git repository this time.
+- This is an individual project; you must work on the assignment alone.
+
+
+### Tips and Restriction
+- The grading system only examines the messages printed out to `stderr`. Thus, you may use `printf` as you need.
+  - This implies you must print out values properly to implement `dump_stack()` as instructed above. 
+
+- The answer is very easy to guess. However, never forge outputs by explicitly printing out values; it will get penalized as same as the cheating.
+
+- It is highly recommended you to set up an development environment on Debian Linux. In fact, I don't care what operating systems or development environments you are using. But the grading will be done by the result from PASubmit which runs Debian Linux. If your code works fine on your environment but not on PASubmit, it means you wrote wrong code. Period.
