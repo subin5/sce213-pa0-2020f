@@ -58,7 +58,8 @@ void push_stack(int value)
  *   of the stack, and the corresponding entry should be removed from @stack.
  *
  * RETURN
- *   The popped value which was at the top of the stack
+ *   If the stack is not empty, pop the top of the stack, and return the value.
+ *   If the stack is empty, return -1
  */
 int pop_stack(void)
 {
@@ -79,6 +80,6 @@ void dump_stack(void)
 {
 	/* TODO: Implement this function */
 
-	fprintf(stderr, "%d\n", stderr, 0xdeadbeef); /* Example. 
+	fprintf(stderr, "%d\n", 0xdeadbeef); /* Example. 
 											Print out values in this form */
 }

@@ -1,4 +1,4 @@
-## Project #0: Implementing Stack with list head
+## Project #0: Warming up C programming
 
 ### *** Due on 24:00, September 18 (Friday) ***
 
@@ -25,7 +25,7 @@ To warm up C programming, implement the stack with list head. In addition, get f
 
 - There are three functions in `stack.c` waiting for your work. Complete `push_stack()`, `pop_stack()`, and `dump_stack()`.
 
-- `push_stack()` and `pop_stack()` are straightforward. Push the given value into the stack, or pop the top of the stack.
+- `push_stack()` and `pop_stack()` are straightforward. Push the given value into the stack, or pop the top of the stack. You may use the head of the list head as the top or the bottom of the stack at your own discretion.
 
 - `dump_stack()` should dump the contents in `stack`. Print out the value in `stack` from the top to the bottom. The value should be printed out to `stderr` to get properly graded in pasubmit. To traverse the list head, you must use one of the functions with `list_for_` as prefix.
 
@@ -33,17 +33,14 @@ To warm up C programming, implement the stack with list head. In addition, get f
 
 
 ### Logistics
-- Create your account at [https://sslab.ajou.ac.kr/pasubmit](https://sslab.ajou.ac.kr/pasubmit).
-  - You don't need to register again if you have an account already. Send an email to instructor if you forgot your password.
-	- New registration will be automatically processed in 10 seconds. Also send an email to instructor if you cannot see this class from your class list.
-- Start this programming assignment by cloning this repository from https://github.com/sslab-ajou/sce213-pa0-2020f.
-- Submit only `stack.c` for the code. PASubmit will not evaluate your submission if you submit files with different names. You don't need to submit the report nor git repository this time.
 - This is an individual project; you must work on the assignment alone.
+- The detailed logistics will be announced once the PA is started.
 
 
 ### Tips and Restriction
+- DO NOT FORK THIS REPOSITORY. "Fork" makes the forked repository as public, and enlists the forked repository in the list. This means, if you fork this repository and submit your work to the repository, other students can easily steal your implemantation, making both of you F.
 - The grading system only examines the messages printed out to `stderr`. Thus, you may use `printf` as you need.
-  - This implies you must print out values properly to implement `dump_stack()` as instructed above. 
+	- This implies you must print out values properly to implement `dump_stack()` as instructed above. 
 
 - The answer is very easy to guess. However, never forge outputs by explicitly printing out values; it will get penalized as same as the cheating.
 

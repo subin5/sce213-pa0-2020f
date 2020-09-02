@@ -39,13 +39,16 @@ int main(int argc, const char *argv[])
 
 	/* Dump the current stack */
 	dump_stack();
+	fprintf(stderr, "\n");
 
 	/* Pop 2 values */
 	fprintf(stderr, "%d\n", pop_stack());
 	fprintf(stderr, "%d\n", pop_stack());
+	fprintf(stderr, "\n");
 
 	/* Dump the current stack */
 	dump_stack();
+	fprintf(stderr, "\n");
 
 	/* And you so on ..... */
 	push_stack(72);
@@ -55,8 +58,10 @@ int main(int argc, const char *argv[])
 	ret = pop_stack();
 
 	dump_stack();
+	fprintf(stderr, "\n");
 
 	fprintf(stderr, "%d\n", pop_stack());
+	fprintf(stderr, "\n");
 
 	/* Empty the stack by popping out all entries */
 	while ((ret = pop_stack()) >= 0) {

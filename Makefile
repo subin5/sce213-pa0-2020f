@@ -1,4 +1,4 @@
-TARGET	= lh
+TARGET	= pa0
 CFLAGS	= -g -c -D_POSIX_C_SOURCE -Iinclude
 CFLAGS += -std=c99 -Wimplicit-function-declaration -Werror
 CFLAGS += # Add your own cflags here if necessary
