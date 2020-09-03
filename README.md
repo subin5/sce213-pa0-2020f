@@ -35,6 +35,11 @@ To warm up C programming, implement the stack with list head. In addition, get f
 ### Logistics
 - This is an individual project; you must work on the assignment alone.
 - The detailed logistics will be announced once the PA is started.
+- Create your account at [https://sslab.ajou.ac.kr/pasubmit](https://sslab.ajou.ac.kr/pasubmit).
+	- You don't need to register again if you have an account already. Send an email to instructor if you forgot your password.
+	- New registration will be automatically processed in 10 seconds. Also send an email to instructor if you cannot see this class from your class list.
+- You can find the template code and this handout through the "Handout" button in the PA description. Start this programming assignment by cloning this repository from https://github.com/sslab-ajou/sce213-pa0-2020f.
+- Submit only `stack.c` for the code. PASubmit will not evaluate your submission if you submit files with different names. You don't need to submit the report nor git repository this time.
 
 
 ### Tips and Restriction
