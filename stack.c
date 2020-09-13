@@ -20,7 +20,7 @@
 #include "list_head.h"
 
 /* Declaration for the stack instance defined in pa0.c */
-struct list_head stack;
+extern struct list_head stack;
 
 /* Entry for the stack */
 struct entry {
