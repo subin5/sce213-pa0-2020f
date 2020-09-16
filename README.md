@@ -31,6 +31,8 @@ To warm up C programming, implement the stack with list head. In addition, get f
 
 - DO NOT ALLOCATE/DEFINE AN ARRAY TO HOLD `struct entry`. Instead, each entry should be dynamically allocated and freed using `malloc` and `free`.
 
+- **(Added Sep 16 1pm)** DO NOT ACCESS `prev` and `next` in `list_head` directly. You should use the functions provided by the library to modify entries in the list instead of exploiting internal data structures. YOU WILL NOT GET ANY POINT IF YOUR CODE ACCESS THESE VARIABLES DIRECTLY.
+
 
 ### Logistics
 - This is an individual project; you must work on the assignment alone.
